@@ -1,4 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const nextConfig = {
+    images: {
+      remotePatterns: [
+        {
+        
+          hostname: "cdn.sanity.io", // Ensure this matches your image domain
+        },
+      ],
+    },
+  };
+  
+  export default nextConfig;
+  
